@@ -12,7 +12,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "deploy": "npm run build && node ./node_modules/push-dir/bin/push-dir.js --dir=dist --branch=gh-pages --allow-unclean --remote siteorigin"
+    "deploy": "npm run build && node ./node_modules/push-dir/bin/push-dir.js --dir=dist --branch=master --allow-unclean --remote siteorigin"
   },
   "dependencies": {
     "vue": "^2.5.2",
