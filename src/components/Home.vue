@@ -5,7 +5,6 @@
           Don't really post often but leave me a message on twitter <a href="https://twitter.com/raxIsBlur">@raxIsBlur</a>
           or you can find me through <a href="https://github.com/raxIsBlur">Github</a>
       </p>
-      
   </div>
 </template>
 
