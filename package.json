@@ -15,6 +15,7 @@
     "deploy": "npm run build && node ./node_modules/push-dir/bin/push-dir.js --dir=dist --branch=master --allow-unclean --remote siteorigin"
   },
   "dependencies": {
+    "marked": "^0.6.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
