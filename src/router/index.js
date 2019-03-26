@@ -11,17 +11,44 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'Home Page - Sarkunan',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Home page of the site'
+          }
+        ]
+      }
     },
     {
       path: '/portfolio',
       name: 'Portfolio',
-      component: Portfolio
+      component: Portfolio,
+      meta: {
+        title: 'Portfolio - Sarkunan',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Portfolio page'
+          }
+        ]
+      }
     },
     {
       path: '/blog',
       name: 'Blog',
-      component: Blog
+      component: Blog,
+      meta: {
+        title: 'Blog - Sarkunan',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'Blog page'
+          }
+        ]
+      }
     },
     {
       path: '/blog/:id',
