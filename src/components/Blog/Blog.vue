@@ -1,34 +1,62 @@
 <template>
   <div class="blog">
       placeholder blog
-      <component :is="currentView"></component>
+      <div v-html="compiledMarkdown"></div>
+      <!-- <component :is="postTitle"></component> -->
   </div>
 </template>
 
 <script>
-import FirstPost from './Post/FirstPost'
-import SecondPost from './Post/SecondPost'
+import marked from 'marked'
+
+import Posts from './Post/CompiledPost'
 
 export default {
   name: 'Blog',
   data: function () {
     return {
-      currentView: 'firstPost'
+      postTitle: ''
+    }
+  },
+  computed: {
+    compiledMarkdown: function () {
+      var mdContent = ''
+      console.log('Posts', Posts)
+      if (Posts) {
+        if (this.postTitle) {
+          mdContent = Posts[this.postTitle].source
+        } else {
+          var postKeys = Object.keys(Posts)
+          mdContent = Posts[postKeys[0]].source
+        }
+      }
+      console.log('mdContent', mdContent)
+      return marked(mdContent, { sanitize: true })
+      // return marked(First.source, { sanitize: true })
     }
   },
   watch: {
     '$route': function () {
-      if (this.$route.params.id === 'firstpost') {
-        this.currentView = 'firstPost'
-      } else if (this.$route.params.id === 'secondpost') {
-        this.currentView = 'secondPost'
+      switch (this.$route.params.id && this.$route.params.id.toUpperCase()) {
+        case 'SECOND':
+        case 'SECONDPOST': this.postTitle = 'Second'; break
+        case 'FIRST':
+        case 'FIRSTPOST': this.postTitle = 'First'; break
+        default: this.postTitle = 'First'
       }
+
+      // if (this.$route.params.id.toUpperCase() === 'FIRSTPOST') {
+      //   this.postTitle = 'First'
+      // } else if (this.$route.params.id.toUpperCase() === 'SECONDPOST') {
+      //   this.postTitle = 'Second'
+      // }
     }
-  },
-  components: {
-    'firstPost': FirstPost,
-    'secondPost': SecondPost
   }
+  // ,
+  // components: {
+  //   'firstPost': FirstPost,
+  //   'secondPost': SecondPost
+  // }
 }
 </script>
 
