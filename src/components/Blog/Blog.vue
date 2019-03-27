@@ -21,7 +21,6 @@ export default {
   computed: {
     compiledMarkdown: function () {
       var mdContent = ''
-      console.log('Posts', Posts)
       if (Posts) {
         if (this.postTitle) {
           mdContent = Posts[this.postTitle].source
@@ -30,7 +29,6 @@ export default {
           mdContent = Posts[postKeys[0]].source
         }
       }
-      console.log('mdContent', mdContent)
       return marked(mdContent, { sanitize: true })
       // return marked(First.source, { sanitize: true })
     }
