@@ -23,6 +23,6 @@ export default {
 <style scoped>
 .hello {
     font-weight: 200;
-    color: whitesmoke;
+    color: rgb(233, 233, 233);
 }
 </style>

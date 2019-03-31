@@ -1,17 +1,11 @@
 <template>
   <v-toolbar class="">
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-side-icon @click.stop="emitDrawerUpdate"></v-toolbar-side-icon>
     <v-toolbar-title>
       <router-link to="/">{{ title }}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <!-- <v-btn flat white>
-        <router-link to="/portfolio">Portfolio</router-link>
-      </v-btn>
-      <v-btn flat white>
-        <router-link to="/blog">Blog</router-link>
-      </v-btn> -->
       <v-btn flat white>
         <router-link to="/resume">Resume</router-link>
       </v-btn>
@@ -25,7 +19,17 @@
 <script>
 export default {
   name: 'Header',
-  props: ['title']
+  // data () {
+  //   return {
+  //     isDrawerOpen: false
+  //   }
+  // },
+  methods: {
+    emitDrawerUpdate: function (event) {
+      this.$emit('update-drawer', !this.drawer)
+    }
+  },
+  props: ['title', 'drawer']
 }
 </script>
 

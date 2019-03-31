@@ -8,11 +8,13 @@ import 'font-awesome/css/font-awesome.css'
 import Home from '@/components/Home'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog/Blog'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/common/Header'
+import Footer from '@/components/common/Footer'
+import NavigationDrawer from '@/components/common/NavigationDrawer'
 
 Vue.component('app-header', Header)
 Vue.component('app-footer', Footer)
+Vue.component('app-nav-drawer', NavigationDrawer)
 
 Vue.use(Vuetify)
 Vue.use(Router)

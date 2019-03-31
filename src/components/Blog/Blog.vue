@@ -8,7 +8,6 @@
 
 <script>
 import marked from 'marked'
-
 import Posts from './Post/CompiledPost'
 
 export default {
@@ -30,7 +29,6 @@ export default {
         }
       }
       return marked(mdContent, { sanitize: true })
-      // return marked(First.source, { sanitize: true })
     }
   },
   watch: {

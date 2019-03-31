@@ -19,29 +19,25 @@
 </template>
 
 <script>
-import socialLinks from './common/SocialLinks'
+import { SOCIAL_LINKS } from '../common/Constants.js'
 
 export default {
   name: 'Footer',
   data () {
-    console.log('socialLinks', socialLinks)
     return {
       currentYear: new Date().getFullYear(),
       icons: [
         {
-          name: 'fa fa-github',
-          color: 'blue',
-          link: socialLinks.github
+          name: SOCIAL_LINKS.github.icon,
+          link: SOCIAL_LINKS.github.url
         },
         {
-          name: 'fa fa-twitter',
-          color: 'blue',
-          link: socialLinks.twitter
+          name: SOCIAL_LINKS.twitter.icon,
+          link: SOCIAL_LINKS.twitter.url
         },
         {
-          name: 'fa fa-linkedin',
-          color: 'blue',
-          link: socialLinks.linkedin
+          name: SOCIAL_LINKS.linkedin.icon,
+          link: SOCIAL_LINKS.linkedin.url
         }
       ]
     }
