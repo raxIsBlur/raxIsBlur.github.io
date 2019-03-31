@@ -6,7 +6,7 @@
         <v-spacer></v-spacer>
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.name"
           :href="icon.link"
           class="mx-3"
           dark
@@ -24,6 +24,7 @@ import socialLinks from './common/SocialLinks'
 export default {
   name: 'Footer',
   data () {
+    console.log('socialLinks', socialLinks)
     return {
       currentYear: new Date().getFullYear(),
       icons: [

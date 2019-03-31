@@ -6,11 +6,6 @@ const SOCIAL_LINKS = {
   github: 'https://github.com/raxIsBlur'
 }
 
-export default {
-  data () {
-    return {
-      socialMediaLinks: Object.assign({}, SOCIAL_LINKS)
-    }
-  }
-}
+export default SOCIAL_LINKS
+
 </script>
