@@ -11,7 +11,7 @@
           class="mx-3"
           dark
           icon>
-          <v-icon size="16px">{{ icon.name }}</v-icon>
+          <v-icon size="24px">{{ icon.name }}</v-icon>
         </v-btn>
       </v-card-title>
     </v-card>
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import socialLinks from './common/SocialLinks'
+
 export default {
   name: 'Footer',
   data () {
@@ -26,24 +28,19 @@ export default {
       currentYear: new Date().getFullYear(),
       icons: [
         {
-          name: 'fa fa-facebook',
+          name: 'fa fa-github',
           color: 'blue',
-          link: '#'
+          link: socialLinks.github
         },
         {
           name: 'fa fa-twitter',
           color: 'blue',
-          link: 'https://www.twitter.com/raxIsBlur'
+          link: socialLinks.twitter
         },
         {
           name: 'fa fa-linkedin',
           color: 'blue',
-          link: '#'
-        },
-        {
-          name: 'fa fa-instagram',
-          color: 'blue',
-          link: '#'
+          link: socialLinks.linkedin
         }
       ]
     }
