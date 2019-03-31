@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
-      <p>Hello, this is currently just for testing :)</p>
+      <p>Hello, I'm currently building out a simple portfolio page using VueJS</p>
       <p>
-          Don't really post often but leave me a message on twitter <a href="https://twitter.com/raxIsBlur">@raxIsBlur</a>
-          or you can find me through <a href="https://github.com/raxIsBlur">Github</a>
+          Tweet at me <a href="https://twitter.com/raxIsBlur">@raxIsBlur</a>
+          or you can find me on <a href="https://github.com/raxIsBlur">Github</a>
       </p>
   </div>
 </template>
@@ -23,6 +23,6 @@ export default {
 <style scoped>
 .hello {
     font-weight: 200;
-    color: red;
+    color: whitesmoke;
 }
 </style>

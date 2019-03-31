@@ -3,6 +3,7 @@ import Vuetify from 'vuetify'
 import Router from 'vue-router'
 
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import 'font-awesome/css/font-awesome.css'
 
 import Home from '@/components/Home'
 import Portfolio from '@/components/Portfolio'

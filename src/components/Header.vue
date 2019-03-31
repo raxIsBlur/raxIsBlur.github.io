@@ -1,10 +1,23 @@
 <template>
   <v-toolbar class="">
-    <v-toolbar-title>{{ title }}</v-toolbar-title>
-    <v-toolbar-items>
-      <v-btn flat white>Test 1</v-btn>
-      <v-btn flat white>Test 2</v-btn>
-      <v-btn flat white>Test 3</v-btn>
+    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-title>
+      <router-link to="/">{{ title }}</router-link>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-sm-and-down">
+      <!-- <v-btn flat white>
+        <router-link to="/portfolio">Portfolio</router-link>
+      </v-btn>
+      <v-btn flat white>
+        <router-link to="/blog">Blog</router-link>
+      </v-btn> -->
+      <v-btn flat white>
+        <router-link to="/resume">Resume</router-link>
+      </v-btn>
+      <v-btn flat white>
+        <router-link to="/contact">Contact</router-link>
+      </v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -18,5 +31,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 </style>
