@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     compiledMarkdown: function () {
-      var mdContent = ''
+      var mdContent = '# No content'
       if (Posts) {
         if (this.postTitle) {
           mdContent = Posts[this.postTitle].source

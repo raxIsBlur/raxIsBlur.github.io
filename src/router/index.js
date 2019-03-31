@@ -1,9 +1,19 @@
 import Vue from 'vue'
+import Vuetify from 'vuetify'
 import Router from 'vue-router'
+
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+
 import Home from '@/components/Home'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog/Blog'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
+Vue.component('app-header', Header)
+Vue.component('app-footer', Footer)
+
+Vue.use(Vuetify)
 Vue.use(Router)
 
 export default new Router({
@@ -32,20 +42,6 @@ export default new Router({
           {
             name: 'description',
             content: 'Portfolio page'
-          }
-        ]
-      }
-    },
-    {
-      path: '/blog',
-      name: 'Blog',
-      component: Blog,
-      meta: {
-        title: 'Blog - Sarkunan',
-        metaTags: [
-          {
-            name: 'description',
-            content: 'Blog page'
           }
         ]
       }
