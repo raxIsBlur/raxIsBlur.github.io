@@ -3,7 +3,7 @@
     <v-app dark>
       <app-header :title="title" :drawer="drawer" @update-drawer="updateDrawer"></app-header>
       <v-content>
-        <v-container fluid>
+        <v-container fluid fill-height>
           <router-view></router-view>
         </v-container>
       </v-content>

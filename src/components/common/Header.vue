@@ -1,18 +1,18 @@
 <template>
-  <v-toolbar class="">
-    <v-toolbar-side-icon @click.stop="emitDrawerUpdate"></v-toolbar-side-icon>
+  <v-toolbar class="toolbar">
     <v-toolbar-title>
       <router-link to="/">{{ title }}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
+    <v-toolbar-side-icon @click.stop="emitDrawerUpdate"></v-toolbar-side-icon>
+    <!-- <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat white>
         <router-link to="/resume">Resume</router-link>
       </v-btn>
       <v-btn flat white>
         <router-link to="/contact">Contact</router-link>
       </v-btn>
-    </v-toolbar-items>
+    </v-toolbar-items> -->
   </v-toolbar>
 </template>
 
@@ -39,4 +39,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.toolbar {
+  background-color: inherit;
+  box-shadow: none;
+}
+
 </style>

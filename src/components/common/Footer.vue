@@ -2,7 +2,7 @@
   <v-footer app dark class="footer">
     <v-card flat tile class="flex bg-color">
       <v-card-title class="footer-padding-adjustment">
-        <strong class="subheading">&copy; {{ currentYear }}</strong>
+        <strong class="subheading">&copy; {{ currentYear }} - {{ author.name }}</strong>
         <v-spacer></v-spacer>
         <v-btn
           v-for="icon in icons"
