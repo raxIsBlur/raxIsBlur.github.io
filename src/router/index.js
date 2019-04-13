@@ -8,6 +8,7 @@ import 'font-awesome/css/font-awesome.css'
 import Home from '@/components/Home'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog/Blog'
+import Resume from '@/components/Resume/Resume'
 import Header from '@/components/common/Header'
 import Footer from '@/components/common/Footer'
 import NavigationDrawer from '@/components/common/NavigationDrawer'
@@ -53,6 +54,11 @@ export default new Router({
       path: '/blog/:id',
       name: 'Blog',
       component: Blog
+    },
+    {
+      path: '/resume',
+      name: 'Resume',
+      component: Resume
     }
   ]
 })

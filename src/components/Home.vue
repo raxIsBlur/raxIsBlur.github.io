@@ -9,7 +9,8 @@
     </v-flex>-->
     <v-flex d-flex xs12>
       <v-card flat style class="text-container center-align-all">
-        <p>Waiting for something amazing to put here.</p>
+        <p class="hello">Hello</p>
+        <p class="other-text">Waiting for something amazing to put here.</p>
       </v-card>
     </v-flex>
     <v-flex d-flex xs12>
