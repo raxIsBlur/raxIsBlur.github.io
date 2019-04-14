@@ -8,9 +8,10 @@
       </v-card>
     </v-flex>-->
     <v-flex d-flex xs12>
-      <v-card flat style class="text-container center-align-all">
-        <p class="hello">Hello</p>
-        <p class="other-text">Waiting for something amazing to put here.</p>
+      <v-card flat style class="text-container first center-align-all">
+        <p class="hello">
+          Hello. Waiting for something amazing to put here.
+        </p>
       </v-card>
     </v-flex>
     <v-flex d-flex xs12>
@@ -85,6 +86,7 @@ export default {
 .hello {
   font-weight: 200;
   color: rgb(233, 233, 233);
+  font-size: 20px;
 }
 
 .text-container {
