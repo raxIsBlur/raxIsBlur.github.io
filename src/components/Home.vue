@@ -24,16 +24,19 @@
           <p style="font-size: 30px;">
             <span style="display: block; margin-bottom: -10px;">Sarkunan V.</span>
             <span style="font-size: 18px;">Software Engineer</span>
+            <span style="color: gray; text-decoration: unset; font-size: 12px;">
+              <a style="color: inherit;" href="/#/resume">(Resume)</a>
+            </span>
           </p>
           <p>
             Hello,
             <br>
             I'm currently building out a simple portfolio page using VueJS.
           </p>
-          <p>Find me on one of these if you've visited :)</p>
+          <p>Find me on one of these</p>
           <div>
             <v-btn v-for="icon in icons" :key="icon.name" :href="icon.link" class="" small dark style="height: 15px!important;">
-              <v-icon size="36px">{{ icon.name }}</v-icon>
+              <v-icon size="36px" :title="icon.title">{{ icon.name }}</v-icon>
             </v-btn>
           </div>
         </div>
@@ -53,16 +56,24 @@ export default {
       icons: [
         {
           name: SOCIAL_LINKS.github.icon,
-          link: SOCIAL_LINKS.github.url
+          link: SOCIAL_LINKS.github.url,
+          title: SOCIAL_LINKS.github.title
         },
         {
           name: SOCIAL_LINKS.twitter.icon,
-          link: SOCIAL_LINKS.twitter.url
+          link: SOCIAL_LINKS.twitter.url,
+          title: SOCIAL_LINKS.twitter.title
         },
         {
           name: SOCIAL_LINKS.linkedin.icon,
-          link: SOCIAL_LINKS.linkedin.url
+          link: SOCIAL_LINKS.linkedin.url,
+          title: SOCIAL_LINKS.linkedin.title
         }
+        // {
+        //   name: 'fa fa-file',
+        //   link: '/#/resume',
+        //   title: 'Resume'
+        // }
       ]
     }
   }

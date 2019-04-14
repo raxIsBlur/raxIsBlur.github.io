@@ -8,6 +8,7 @@
 
 <script>
 import marked from 'marked'
+import sanitizeHtml from 'sanitize-html'
 import ResumeMD from './Resume.md'
 
 export default {
@@ -19,7 +20,7 @@ export default {
   },
   computed: {
     compiledMarkdown: function () {
-      return marked(ResumeMD.source, { breaks: true, gfm: true })
+      return marked(ResumeMD.source, { breaks: true, gfm: true, sanitize: true, sanitizer: sanitizeHtml })
     }
   }
 }
