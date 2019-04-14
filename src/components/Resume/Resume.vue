@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex d-flex xs8 offset-xs2>
-        <div v-html="compiledMarkdown"></div>
+        <div class="resume" v-html="compiledMarkdown"></div>
     </v-flex>
   </v-layout>
 </template>
@@ -19,14 +19,27 @@ export default {
   },
   computed: {
     compiledMarkdown: function () {
-      return marked(ResumeMD.source, { sanitize: true })
+      return marked(ResumeMD.source, { breaks: true, gfm: true })
     }
   }
 }
 </script>
 
-<style scoped>
-.resume {
-    /* color: green; */
+<style>
+.resume h2 {
+  margin-top: 15px;
 }
+
+.resume ul {
+  margin-bottom: 20px;
+}
+
+.resume li {
+  margin: 5px 0;
+}
+
+.resume p {
+  margin-bottom: 5px;
+}
+
 </style>

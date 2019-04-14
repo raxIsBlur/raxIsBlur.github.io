@@ -2,6 +2,8 @@
 
 sarkunan92@gmail.com
 
+---
+
 ## Experience
 
 - __InfinitiLab__, Senior Software Engineer (Puchong, Malaysia)
@@ -53,27 +55,35 @@ sarkunan92@gmail.com
     - Redesigned the applications user interface and redeveloped the application’s front end to be responsive using Bootstrap.
     - Performed general cleanup refactoring on the code.
 
+---
+
 ## Education
 
 - __BSc (Hons) in Software Engineering__, Asia Pacific University (TPM, Kuala Lumpur, Malaysia)
   - Graduated in July 2014 with a CGPA of 3.54
   - Courses revolved around educating the major components of Software Engineering and the roles of a Software Engineer.
 
+---
+
 ## Projects
+
+- __Expense Manager__, Currently on-going
+  - Developing a simplified expense manager to track daily expenses using .NET Core and Angular to replace the use of Google Forms and Sheets for my expense tracking and budgeting.
+  - Hoping to simplify the entry process and automating where possible.
 
 - __Course Recommendation System Using Predictive Analysis__, Final Year Project, 2014
   - A recommender system to suggest a suitable course for students based on data attributes such as past education, involvement in academic activities, and demographic attributes.
   - Applied software engineering concepts for the development process and applied Knowledge Discovery in Databases process discover useful knowledge from the collected data.
   - Searched and prepared suitable datasets to train the model and provide recommendations.
 
-- __Expense Manager__
-  - Currently developing a expense manager to track daily expenses using .NET Core and Angular to replace the use of Google Forms and Sheets for my expense tracking and budgeting.
-  - Prepared a simple Requirements Specification and ERD as well as the general process flow
+---
 
-## Technical
+## Technical Skills
 
-### Programming Languages
-
-### Frameworks and Libraries
-
-### Tools
+- Experienced in C#, JavaScript, SQL, Python, Bash Scripting
+- Experienced in .Net Framework, .Net Core, AngularJS, React, React Native
+- Beginner knowledge in VueJS and Angular
+- Worked with Microsoft and Linux server to manage applications
+- Familiar with Visual Studio 2017, Management Studio SQL, MongoDb
+- Version control, Git and SVN
+- Agile/Scrum Methodology
